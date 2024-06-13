@@ -1,7 +1,7 @@
 import Transaction  from '../models/Transaction';
 
 export default class TransactionService {
-    static async createTransaction(products: { productId: number; quantity: number }[], totalAmount: number): Promise<void> {
+    static async createTransaction(products: string, totalAmount: string): Promise<void> {
         await Transaction.create({id: 0, products, totalAmount });
     }
 

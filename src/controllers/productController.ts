@@ -3,8 +3,11 @@ import ProductService from '../services/productService';
 
 export const createProduct = async (req: Request, res: Response): Promise<void> => {
     try {
-        const { name, price, description, quantity } = req.body;
-        await ProductService.createProduct(name, price, description, quantity);
+        const name = req.get("name");
+        const price = req.get("price");
+        const description = req.get("description");
+        const quantity = req.get("quantity");
+        await ProductService.createProduct(name, Number(price), description, Number(quantity));
         res.status(201).json({ message: 'Product created successfully' });
     } catch (error) {
         res.status(500).json({ message: 'Failed to create product' });
@@ -23,7 +26,7 @@ export const getAllProducts = async (req: Request, res: Response): Promise<void>
 export const updateProduct = async (req: Request, res: Response): Promise<void> => {
     try {
         const productId = parseInt(req.params.id);
-        const updatedFields = req.body;
+        const updatedFields = req.params;
         await ProductService.updateProduct(productId, updatedFields);
         res.status(200).json({ message: 'Product updated successfully' });
     } catch (error) {

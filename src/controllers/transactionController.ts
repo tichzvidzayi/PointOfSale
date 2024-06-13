@@ -3,7 +3,8 @@ import TransactionService from '../services/transactionService';
 
 export const createTransaction = async (req: Request, res: Response): Promise<void> => {
     try {
-        const { products, totalAmount } = req.body;
+        const products = req.get("products");
+        const totalAmount = req.get("totalAmount");
         await TransactionService.createTransaction(products, totalAmount);
         res.status(201).json({ message: 'Transaction created successfully' });
     } catch (error) {

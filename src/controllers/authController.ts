@@ -3,7 +3,8 @@ import AuthService from '../services/authService';
 
 export const signUp = async (req: Request, res: Response): Promise<void> => {
     try {
-        const { email, password } = req.body;
+        const email = req.get("email");
+        const password = req.get("password");
         await AuthService.signUp(email, password);
         res.status(201).json({ message: 'User created successfully' });
     } catch (error) {
@@ -13,7 +14,8 @@ export const signUp = async (req: Request, res: Response): Promise<void> => {
 
 export const logIn = async (req: Request, res: Response): Promise<void> => {
     try {
-        const { email, password } = req.body;
+        const email = req.get("email");
+        const password = req.get("password");
         const token = await AuthService.logIn(email, password);
         res.status(200).json({ token });
     } catch (error) {
