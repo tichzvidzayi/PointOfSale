@@ -78,7 +78,7 @@ point-of-sales/
 
 1. Clone the repository:
     ```sh
-    https://github.com/tichzvidzayi/munch_pos.git
+    https://github.com/tichzvidzayi/munchie_point_of_sale.git
     cd point-of-sales
     ```
 
