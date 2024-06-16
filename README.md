@@ -1,4 +1,4 @@
-# Point of Sales Application
+# Munchie Point of Sales Application
 
 ## Overview
 
@@ -72,7 +72,7 @@ point-of-sales/
 ### Prerequisites
 
 - Node.js 20+
-- Docker (optional, for containerization)
+- Docker ( for containerization)
 
 ### Installation
 
