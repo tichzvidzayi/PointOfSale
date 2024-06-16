@@ -1,13 +1,26 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "target": "ES2020",                         // Set the target JavaScript version.
+    "module": "commonjs",                       // Specify the module code generation.
+    "rootDir": "./src",                         // Specify the root directory of input files.
+    "outDir": "./dist",                         // Redirect output structure to the directory.
+    "strict": true,                             // Enable all strict type-checking options.
+    "esModuleInterop": true,                    // Enable compatibility with ES module import/export.
+    "skipLibCheck": true,                       // Skip type checking of declaration files.
+    "forceConsistentCasingInFileNames": true,   // Ensure consistent casing in file names.
+    "types": ["node", "jest"],                  // Include type definitions for Node.js and Jest.
+    "resolveJsonModule": true,                  // Enable importing JSON files.
+    "noImplicitAny": true,                      // Raise error on expressions and declarations with an implied 'any' type.
+    "noUnusedLocals": true,                     // Report errors on unused local variables.
+    "noUnusedParameters": true,                 // Report errors on unused parameters.
+    "noImplicitReturns": true,                  // Report error when not all code paths in function return a value.
+    "noFallthroughCasesInSwitch": true,         // Report errors for fallthrough cases in switch statements.
+    "moduleResolution": "node",                 // Specify module resolution strategy.
+    "baseUrl": ".",                             // Base directory for resolving non-relative module names.
+    "paths": {                                  // Paths mapping for module resolution.
+      "*": ["node_modules/*"]
+    }
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src"],                           // Include the specified files and directories.
+  "exclude": ["node_modules", "dist"]           // Exclude the specified files and directories.
 }

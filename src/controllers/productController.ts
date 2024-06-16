@@ -14,7 +14,7 @@ export const createProduct = async (req: Request, res: Response): Promise<void> 
     }
 };
 
-export const getAllProducts = async (req: Request, res: Response): Promise<void> => {
+export const getAllProducts = async ( res: Response): Promise<void> => {
     try {
         const products = await ProductService.getAllProducts();
         res.status(200).json(products);
