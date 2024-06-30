@@ -1,4 +1,4 @@
-# Munchie Point of Sales Application
+# Point of Sales Application
 
 ## Overview
 
