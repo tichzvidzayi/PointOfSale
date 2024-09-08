@@ -1,4 +1,4 @@
-# Point of Sale Application.
+# Point of Sale Application
 
 ## Overview
 
