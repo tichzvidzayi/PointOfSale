@@ -67,8 +67,6 @@ point-of-sales/
 └── tsconfig.json
 
 
-## Getting Started
-
 ### Prerequisites
 
 - Node.js 20+
