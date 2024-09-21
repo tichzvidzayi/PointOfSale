@@ -163,7 +163,7 @@ point-of-sales/
 - Write unit tests for critical functionalities.
 - Use Docker for easy deployment and scaling.
 
-### Contributing
+### Contributions
 
 Contributions are welcome! Please open an issue or submit a pull request.
 
