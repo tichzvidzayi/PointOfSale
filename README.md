@@ -6,13 +6,13 @@ The Point of Sales (POS) application is designed to handle key aspects such as u
 
 ## Features
 
-1. ** User Authentication**
+1. ### User Authentication
     - Sign up with a unique email and password.
     - Securely hash and store passwords.
     - Log in with email and password.
     - Token-based authentication for securing API endpoints.
 
-2. ** Product Management**
+2. ### Product Management**
     - Create a new product with name, price, description, and quantity attributes.
     - Retrieve a list of all products.
     - Update the details of an existing product.
