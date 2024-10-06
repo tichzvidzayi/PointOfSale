@@ -29,6 +29,7 @@ The Point of Sales (POS) application is designed to handle key aspects such as u
     - Retrieve details of a specific transaction.
 
 ## Project Structure
+```bash
 point-of-sales/
 ├── src/
 │ ├── config/
@@ -66,7 +67,7 @@ point-of-sales/
 ├── package.json
 └── tsconfig.json
 
-
+```
 ### Prerequisites
 
 - Node.js 20+
