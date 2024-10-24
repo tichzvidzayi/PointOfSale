@@ -71,7 +71,6 @@ point-of-sales/
 ### Prerequisites
 
 - Node.js 20+
-- Docker ( for containerization)
 
 ### Installation
 
