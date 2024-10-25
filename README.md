@@ -3,7 +3,6 @@
 ## Overview
  
 The Point of Sales (POS) application is designed to handle key aspects such as user authentication, product management, upsell product management, and sales transactions. 
-
 ## Features
 
 1. ### User Authentication
