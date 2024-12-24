@@ -69,7 +69,6 @@ point-of-sales/
 ### Prerequisites
 
 - Node.js 20+
-
 ### Installation
 
 1. Clone the repository:
